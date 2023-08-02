@@ -8,14 +8,14 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
-.container__common{
+.container__common {
   width: 75%;
   margin: 0 auto;
 }
 .clear {
   clear: both;
 }
-.title h2{
+.title h2 {
   font-size: 40px;
   font-weight: 600;
   text-align: center;
@@ -23,10 +23,11 @@ body {
   display: flex;
   justify-content: center;
 }
-.title  h2 span{
-color: #ff6e65;
+.title h2 span {
+  color: #ff6e65;
+  margin-left: 10px;
 }
-.title h2::before{
+.title h2::before {
   content: "";
   width: 60px;
   height: 2px;
@@ -34,9 +35,8 @@ color: #ff6e65;
   position: absolute;
   bottom: -7px;
   transform: translateX(-20%);
-  
 }
-.title h2::after{
+.title h2::after {
   content: "";
   width: 60px;
   height: 2px;
@@ -72,7 +72,8 @@ header .header__left span {
 }
 header .hover__ora:hover,
 header .header__content a:hover,
-header .header__content .active a {
+header .header__content .active a,
+.intro .intro__top__item a:hover {
   color: #ff6e65;
 }
 /* header content */
@@ -116,7 +117,7 @@ header .header__nav button {
 }
 
 /*  BANNER */
-.banner__container{
+.banner__container {
   position: relative;
 }
 .banner .carousel-item {
@@ -136,13 +137,13 @@ header .header__nav button {
   border-radius: 50%;
   background-color: #ff6e65;
 }
-.banner .carousel-item{
+.banner .carousel-item {
   position: relative;
 }
 .banner .carousel-item .banner__text {
   width: 100%;
   height: 100%;
- position: absolute;
+  position: absolute;
   top: 33%;
   left: 12.5%;
 }
@@ -165,23 +166,21 @@ header .header__nav button {
 }
 
 /* button banner */
-.banner .carousel-indicators li{
-
+.banner .carousel-indicators li {
 }
 
-
 /* SERVICE */
-.service__box{
+.service__box {
   padding: 50px 30px;
   border: 1px solid transparent;
   border-radius: 10px;
   transform: translateY(-40%);
 }
-.service .service__box i{
+.service .service__box i {
   font-size: 45px;
   color: white;
 }
-.service .service__box a{
+.service .service__box a {
   display: block;
   font-size: 22px;
   margin-top: 10px;
@@ -193,23 +192,23 @@ header .header__nav button {
 .service .service__box a:hover {
   color: black;
 }
-.service .box__1{
+.service .box__1 {
   background-color: #037ef3;
 }
-.service .box__2{
+.service .box__2 {
   background-color: #ffc949;
 }
-.service .box__3{
+.service .box__3 {
   background-color: #ff4f81;
 }
-.service .box__4{
+.service .box__4 {
   background-color: #1ee697;
 }
 /* INTRO */
-.intro .intro__top h2{
-margin-bottom: 50px;
+.intro .intro__top h2 {
+  margin-bottom: 50px;
 }
-.intro .intro__box i{
+.intro .intro__top__item i {
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -217,9 +216,23 @@ margin-bottom: 50px;
   background: #e9edf6;
   color: #0d369f;
   line-height: 70px;
-  margin-bottom: 20px;
 }
-.intro .intro__box a{
+.intro .intro__top__item a {
   text-decoration: none;
   color: black;
+  transition: all 0.5s;
+}
+.intro .intro__top__item h3 {
+  margin: 20px 0;
+}
+.intro .intro__top__item p {
+  color: #707070;
+  letter-spacing: 0.5px;
+}
+/* intro bot */
+.intro .intro__bot .intro__bot__item{
+  border: 1px solid red;
+}
+.intro .intro__bot__box{
+  padding: 15px;
 }
