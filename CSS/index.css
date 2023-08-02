@@ -346,14 +346,17 @@ header .header__nav button {
   margin-top: 20px;
   margin-bottom: 5px;
   font-weight: 700;
+  transition: all 0.5s;
 }
 .instructions__item p {
   font-size: 14px;
 }
+.instructions__item:hover h5{
+  color: #ff6e65;
+}
 .instructions__item:hover .instructors__overlay {
   transform: translateY(0);
   opacity: 1;
-  
 }
 .instructions__item .instructors__overlay {
   width: 100%;
