@@ -1,0 +1,225 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+.container__common{
+  width: 75%;
+  margin: 0 auto;
+}
+.clear {
+  clear: both;
+}
+.title h2{
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.title  h2 span{
+color: #ff6e65;
+}
+.title h2::before{
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: #707070;
+  position: absolute;
+  bottom: -7px;
+  transform: translateX(-20%);
+  
+}
+.title h2::after{
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: #707070;
+  position: absolute;
+  bottom: -14px;
+  transform: translateX(20%);
+}
+
+/* HEADER */
+/* header contact */
+header .header__contact {
+  background-color: #0d369f;
+  font-size: 15px;
+}
+header .header__left a,
+header .header__left i,
+header .header__right i {
+  color: white;
+}
+header .header__left i {
+  font-size: 13px;
+}
+header .header__right i {
+  margin-left: 30px;
+  transition: all 0.5s;
+}
+header .header__left a {
+  text-decoration: none;
+}
+header .header__left span {
+  transition: all 0.5s;
+}
+header .hover__ora:hover,
+header .header__content a:hover,
+header .header__content .active a {
+  color: #ff6e65;
+}
+/* header content */
+header .header__nav span {
+  color: #0d369f;
+  font-size: 26px;
+  font-weight: 700;
+  margin-left: 5px;
+  transition: all 0.5s;
+}
+header .header__nav .nav-link {
+  text-transform: uppercase;
+  color: #060606;
+  font-weight: 600;
+  margin: 0 5px;
+}
+header .navbarDropdown {
+  border: 1px solid white;
+}
+header .header__nav input {
+  border-radius: 20px;
+  border: 2px solid #eee;
+}
+header .header__nav .form-inline {
+  position: relative;
+}
+header .header__nav input {
+  padding: 20px;
+  margin-left: 10px;
+}
+header .header__nav input:focus {
+  outline: none !important;
+  box-shadow: none;
+  border: 2px solid #eee;
+}
+header .header__nav button {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color: #0d369f;
+}
+
+/*  BANNER */
+.banner__container{
+  position: relative;
+}
+.banner .carousel-item {
+  height: 80vh;
+  background-size: cover;
+  background-position: bottom center;
+}
+.banner li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+.banner li.active {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff6e65;
+}
+.banner .carousel-item{
+  position: relative;
+}
+.banner .carousel-item .banner__text {
+  width: 100%;
+  height: 100%;
+ position: absolute;
+  top: 33%;
+  left: 12.5%;
+}
+.banner .carousel-item .banner__text p {
+  color: white;
+  font-size: 70px;
+  line-height: 80px;
+  font-weight: bold;
+}
+.banner .carousel-item .button1 {
+  padding: 12px 22px;
+  background-color: white;
+  font-weight: bold;
+  box-shadow: none;
+  transition: all 0.5s;
+}
+.banner .carousel-item .button1:hover {
+  background-color: #ff6e65;
+  color: white;
+}
+
+/* button banner */
+.banner .carousel-indicators li{
+
+}
+
+
+/* SERVICE */
+.service__box{
+  padding: 50px 30px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transform: translateY(-40%);
+}
+.service .service__box i{
+  font-size: 45px;
+  color: white;
+}
+.service .service__box a{
+  display: block;
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.service .service__box a:hover {
+  color: black;
+}
+.service .box__1{
+  background-color: #037ef3;
+}
+.service .box__2{
+  background-color: #ffc949;
+}
+.service .box__3{
+  background-color: #ff4f81;
+}
+.service .box__4{
+  background-color: #1ee697;
+}
+/* INTRO */
+.intro .intro__top h2{
+margin-bottom: 50px;
+}
+.intro .intro__box i{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 30px;
+  background: #e9edf6;
+  color: #0d369f;
+  line-height: 70px;
+  margin-bottom: 20px;
+}
+.intro .intro__box a{
+  text-decoration: none;
+  color: black;
+}
