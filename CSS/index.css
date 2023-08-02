@@ -230,9 +230,35 @@ header .header__nav button {
   letter-spacing: 0.5px;
 }
 /* intro bot */
+.intro .intro__bot{
+  background-image: url(../img/bg3.jpg);
+  background-size: cover;
+  background-position: bottom;
+  padding: 50px 0;
+}
 .intro .intro__bot .intro__bot__item{
-  border: 1px solid red;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: white;
 }
 .intro .intro__bot__box{
   padding: 15px;
+}
+.intro .intro__bot__item i{
+  width: 30%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #e9edf6;
+  text-align: center;
+  line-height: 70px;
+  font-size: 28px;
+  color: #0d369f;
+  margin-right: 20px;
+}
+.intro .intro__text{
+  width: 70%;
 }
