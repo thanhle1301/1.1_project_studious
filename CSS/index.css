@@ -45,6 +45,54 @@ body {
   bottom: -14px;
   transform: translateX(20%);
 }
+/* DARK-LIGHT */
+.nav-item2 .nav-link i{
+  font-size: 30px;
+  transform: translateY(7px);
+  color:#4867b0 ;
+}
+body .nav-item2 .nav-link:hover i{
+  color: #ff6e65 ;
+}
+
+/* light theme */
+#myBody{
+  background-color: white;
+  transition: all 0.5s;
+}
+#switchButton{
+  background-color: white;
+  transition: all 0.5s;
+}
+#switchButton .fa-sun{
+  display: none;
+}
+#switchButton .fa-moon {
+  display: block;
+  
+}
+/* dark theme */
+.dark#myBody {
+  background-color: black;
+  transition: all 0.5s;
+}
+.dark #switchButton {
+  background-color: black;
+  transition: all 0.5s;
+}
+.dark #switchButton .fa-sun {
+  display: block;
+  
+}
+.nav-item2 .nav-link:focus{
+outline: none !important;
+box-shadow: none;
+}
+.dark #switchButton .fa-moon {
+  display: none;
+}
+/* tag dark */
+
 
 /* HEADER */
 /* header contact */
@@ -96,6 +144,7 @@ header .navbarDropdown {
 header .header__nav input {
   border-radius: 20px;
   border: 2px solid #eee;
+  z-index: 2;
 }
 header .header__nav .form-inline {
   position: relative;

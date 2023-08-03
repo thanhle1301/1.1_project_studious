@@ -31,7 +31,7 @@
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./CSS/index.css" />
   </head>
-  <body>
+  <body id="myBody">
     <!-- HEADER -->
     <header>
       <div class="header__container">
@@ -119,6 +119,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                   </li>
+                  
                 
               </ul>
               <form class="form-inline my-2 my-lg-0">
@@ -133,6 +134,22 @@
                 </button>
                
               </form>
+
+
+
+             
+              <!-- dark-light -->
+              <div class="nav-item nav-item2 ml-5">
+                <button class="btn nav-link" id="switchButton" title="Click to switch theme">
+                  <i class="fa-regular fa-moon"></i>
+                  <i class="fa-regular fa-sun"></i>
+                </button>
+              </div>
+              <!-- end dark-light -->
+
+
+
+
             </div>
           </nav>
           <!-- end navbar -->
@@ -613,6 +630,27 @@
   'delay': 10
 });
 </script>
- 
+ <!-- DARK -LIGHT -->
+ <script>
+/**
+Solution: 
+Khi click vào nút moon 🌙 , thẻ body sẽ được thêm class dark.
+Dựa vào class dark, ta viết css dành riêng cho dark theme.
+
+Ngược lại, khi click vào nút sun ☀️, ta sẽ xóa class dark để css light theme hiện lại
+
+*/
+
+//gọi thẻ button có id là switchButton
+// gắn chức năng click cho switchButton
+document.getElementById("switchButton").onclick = function () {
+  //khi button được click thì tìm đến thẻ body có id là myBody
+  // dùng classlist để gọi thuộc tính class của thẻ body
+  //Sử dụng toggle() để thêm hoặc xóa 1 class của thẻ html. Nếu thẻ body không có class dark thì toggle sẽ thêm class dark vào body. Ngược lại, nếu thẻ body đang có class dark thì toogle sẽ xóa class dark đi.
+  document.getElementById("myBody").classList.toggle("dark");
+};
+
+
+ </script>
   </body>
 </html>
