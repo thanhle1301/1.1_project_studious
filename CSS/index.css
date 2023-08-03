@@ -331,7 +331,6 @@ header .header__nav button {
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0 20px 62px rgba(128, 128, 128, 0.3);
-  
 }
 .instructors__img {
   position: relative;
@@ -351,7 +350,7 @@ header .header__nav button {
 .instructions__item p {
   font-size: 14px;
 }
-.instructions__item:hover h5{
+.instructions__item:hover h5 {
   color: #ff6e65;
 }
 .instructions__item:hover .instructors__overlay {
@@ -382,28 +381,28 @@ header .header__nav button {
   margin: 0 5px;
 }
 /* CONTACT */
-.contact{
+.contact {
   margin-top: 80px;
 }
-.contact__item1 img{
+.contact__item1 img {
   display: block;
-  width: 80%;
-  height: 100%;
+  width: 300px;
+  height: 300px;
   margin: 0 auto;
 }
-.contact__item2 h2{
+.contact__item2 h2 {
   margin-top: 50px;
   font-size: 35px;
   font-weight: 600;
   line-height: 45px;
 }
-.contact__item2 p{
+.contact__item2 p {
   line-height: 30px;
   color: #707070;
   letter-spacing: 0.5px;
   font-weight: 400;
 }
-.contact__item2 .contact__button{
+.contact__item2 .contact__button {
   padding: 14px 30px;
   background-color: #ff6e65;
   color: white;
@@ -411,6 +410,129 @@ header .header__nav button {
   margin-top: 20px;
   transition: all 0.5s;
 }
-.contact__item2 .contact__button:hover{
+.contact__item2 .contact__button:hover {
   background-color: #0d369f;
+}
+/* CONTACT : content */
+.contact__content {
+  background: #060e1f;
+  padding-top: 200px;
+  padding-bottom: 80px;
+  position: relative;
+  margin-top: 150px;
+}
+.contact__item{
+  position: relative;
+}
+.contact__item h5 {
+  color: white;
+  font-weight: 600;
+  
+  padding-bottom: 20px;
+}
+.contact__item h5::before{
+  content: "";
+  width: 100% ;
+  height: 1px;
+  background-color: rgba(238, 238, 238,0.1);
+  position: absolute;
+  left: 0;
+  top: 30px;
+}
+.contact__item i {
+  font-size: 12px;
+}
+.contact__item .contact__icon {
+  display: flex;
+}
+
+.contact__item a {
+  display: block;
+  color: #cecece;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: all 0.5s;
+}
+.contact__item a:hover, .contact__item .contact__address a:hover{
+  color: white;
+}
+.contact__item p {
+  color: #cecece;
+}
+.contact__item .contact__icon i {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  line-height: 38px;
+  background-color: rgb(255, 255, 255, 0.1);
+  text-align: center;
+  margin: 0 5px;
+  color: white;
+  transition: all 0.5s;
+}
+.contact__item .contact__icon i:hover{
+  color: #cecece;
+}
+.contact__item .contact__address a {
+  margin-bottom: 15px;
+  color: #cecece;
+  transition: all 0.5s;
+}
+.contact__about{
+  border-left: 1px solid rgba(238, 238, 238,0.1);
+}
+/* CONTACT : search */
+.contact__search {
+  background-color: white;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 50px 1px rgba(128, 128, 128, 0.3);
+}
+.contact__search h3 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.contact__search input {
+  border: 1px solid #eee;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.contact__search input:focus {
+  box-shadow: 1px 1px 5px 1px rgba(128, 128, 128, 0.5);
+  outline: none !important;
+}
+.contact__search button {
+  color: white;
+  border: 1px solid transparent;
+  padding: 15px 25px;
+
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  background-color: #0d369f;
+  transition: all 0.5s;
+}
+.contact__search button:hover {
+  background-color: rgba(13, 54, 159, 0.9);
+}
+/* CONTACT :contact__bot */
+.contact__bot {
+  background-color: #040a17;
+}
+.contact__bot p {
+  margin-bottom: 0;
+  color: #cecece;
+}
+.contact__bot a{
+  color: white;
 }
