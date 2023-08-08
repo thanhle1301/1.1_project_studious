@@ -585,3 +585,29 @@ header .header__nav button {
 .contact__bot a{
   color: white;
 }
+/* BACK TO TOP */
+.backtotop {
+  visibility: hidden;
+  position: fixed;
+  bottom: 80px;
+  right: 20px; 
+}
+.backtotop i{
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #0d369f;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px; 
+}
+.backtotop i:hover {
+  opacity: 0.8;
+}
+.cd-top--is-visible { 
+  visibility: visible;
+  opacity: 1;
+}
