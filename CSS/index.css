@@ -637,7 +637,7 @@ header .header__nav button {
 /* CONTACT : search */
 .contact__search {
   background-color: white;
-  width: 60%;
+  width: 85%;
   margin: 0 auto;
   border-radius: 10px;
   padding: 50px;
@@ -652,7 +652,7 @@ header .header__nav button {
   font-weight: 600;
 }
 .contact__search input {
-  border: 0.5px solid rgb(255, 255, 255, 0.2);
+  border: 1px solid #eee;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   padding: 15px;
@@ -750,17 +750,32 @@ header .header__nav button {
   }
 
   /* BANNER */
+  .banner .banner__container .carousel-item {
+    height: 90%;
+  }
   .banner .banner__container .banner__text {
-    transform: translate(15%, 50%);
+    transform: translate(12%, 50%);
   }
   .banner .banner__container .banner__text p {
     font-size: 50px;
     line-height: 1;
   }
+  /* CONTACT */
+  .contact .contact__about {
+    border-left: none;
+  }
 }
 @media screen and (max-width: 767px) {
+  /* BANNER */
   .banner .banner__container .banner__text {
-    transform: translate(10%, 40%);
-    width: 100%;
+    transform: translate(16%, 40%);
+    width: 85%;
   }
+  /* SERVICE */
+  .service .service__item {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 575px) {
 }
