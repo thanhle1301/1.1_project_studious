@@ -11,7 +11,7 @@
 		window.addEventListener("scroll", function(event) {
 			if( !scrolling ) {
 				scrolling = true;
-				(!window.requestAnimationFrame) ? setTimeout(checkBackToTop, 250) : window.requestAnimationFrame(checkBackToTop);
+				(!window.requestAnimationFrame) ? setTimeout(checkBackToTop, 0) : window.requestAnimationFrame(checkBackToTop);
 			}
 		});
 

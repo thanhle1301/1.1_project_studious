@@ -56,6 +56,17 @@ body .nav-item2 .nav-link:hover i{
   color: #ff6e65 ;
 }
 
+button {
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
+    padding: 16px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 0 8px 8px 0;
+}
+
 /* light theme */
 #myBody{
   background-color: white;
@@ -100,6 +111,7 @@ box-shadow: none;
 
 
 #myBody.dark .contact__search,
+#myBody.dark .contact__search input,
 #myBody.dark .intro__bot__item,
 #myBody.dark .form-inline input    {
   background-color: #161C2D; /* Màu bạn muốn cho chế độ tối */
@@ -153,9 +165,14 @@ box-shadow: none;
   background-color: rgba(168,176 , 195, 0.11); /* Màu bạn muốn cho chế độ tối */
 }
 
+#myBody.dark button,
 #myBody.dark .intro .intro__top__item i,
 #myBody.dark .intro .intro__bot__item i {
   color: #4867B0; /* Màu bạn muốn cho chế độ tối */
+}
+#myBody.dark .onTop,
+#myBody.dark .buttonbg {
+  background-color: #4867B0; /* Màu bạn muốn cho chế độ tối */
 }
 
 
@@ -638,7 +655,7 @@ header .header__nav button {
   font-weight: 600;
 }
 .contact__search input {
-  border: 1px solid #eee;
+  border: 0.5px solid rgb(255, 255, 255, 0.2);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   padding: 15px;
