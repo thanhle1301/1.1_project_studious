@@ -9,7 +9,7 @@ body {
   font-size: 16px;
 }
 .container__common {
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
 }
 .clear {
@@ -91,7 +91,7 @@ box-shadow: none;
 .dark #switchButton .fa-moon {
   display: none;
 }
-/* tag dark */
+
 
 
 /* HEADER */
@@ -610,4 +610,10 @@ header .header__nav button {
 .cd-top--is-visible { 
   visibility: visible;
   opacity: 1;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 991px) {
+  .service__item {
+    margin-top: 20px;
+  }
 }
