@@ -73,7 +73,7 @@ button {
   transition: all 0.5s;
 }
 #switchButton{
-  background-color: white;
+  background-color: transparent;
   transition: all 0.5s;
 }
 #switchButton .fa-sun{
@@ -89,7 +89,7 @@ button {
   transition: all 0.5s;
 }
 .dark #switchButton {
-  background-color: #161C2D;
+  background-color: transparent;
   transition: all 0.5s;
 }
 
@@ -148,6 +148,7 @@ box-shadow: none;
 #myBody.dark .intro .intro__top__item h3,
 #myBody.dark .intro .intro__top__item i {
   color: white; /* Màu bạn muốn cho chế độ tối */
+  font-size: 20px;
 }
 
 #myBody.dark  .h5_DarkLight {
@@ -163,6 +164,7 @@ box-shadow: none;
 #myBody.dark .intro .intro__top__item i,
 #myBody.dark .intro .intro__bot__item i {
   background-color: rgba(168,176 , 195, 0.11); /* Màu bạn muốn cho chế độ tối */
+ 
 }
 
 #myBody.dark button,
@@ -175,7 +177,20 @@ box-shadow: none;
   background-color: #4867B0; /* Màu bạn muốn cho chế độ tối */
 }
 
+/* button dark_light */
 
+#switchButton{
+  transform: translate(-25%,25%); /* vi trí icon d-light */
+}
+#switchButton i:hover  {
+  color: #ff6e65;
+}
+#switchButton i{
+  font-size: 30px; /* font icon d-light */
+}
+.btn_dark_light:focus{
+  box-shadow: none; 
+}
 
 
 
@@ -297,10 +312,10 @@ header .header__nav button {
   position: relative;
 }
 .banner .carousel-item .banner__text {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 13%;
 }
 .banner .carousel-item .banner__text p {
@@ -308,6 +323,7 @@ header .header__nav button {
   font-size: 70px;
   line-height: 80px;
   font-weight: bold;
+  
 }
 .banner .carousel-item .button1 {
   padding: 12px 22px;
@@ -718,9 +734,37 @@ header .header__nav button {
   visibility: visible;
   opacity: 1;
 }
+
 /* RESPONSIVE */
 @media screen and (max-width: 991px) {
-  .service__item {
-    margin-top: 20px;
+  /* HEADER */
+  
+  header .header__nav span.fa-bars {
+    color: white;
+    background-color: #0d369f;
+    line-height: 39px ;
+    margin: 0;
+    border-radius: 5px;
+  }
+  header button.collapsed {
+    padding: 0;
+  }
+  .collapsed {
+    border-color: black;
+    background-color: #0d369f;
+  }
+  #switchButton{
+    background-color: transparent;
+  }
+  #switchButton .fa-regular {
+   transform: translate(-200%,-30%);
+  }
+  #switchButton .fa-sun {
+    transform: translate(-150%,-30%);
+  }
+  /* BANNER */
+  .banner .banner__container .banner__text p{
+    font-size: 50px ;
+    line-height: 1 ;
   }
 }
