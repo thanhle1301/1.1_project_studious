@@ -155,7 +155,7 @@ box-shadow: none;
 }
 
 #myBody.dark  .h2_DarkLight_Hover:hover {
-  color: #ff6e65;
+  color: #ff6e65; /*hover vào 1 vài element ở chế độ tối */
   cursor: pointer;
   background: none;
 }
