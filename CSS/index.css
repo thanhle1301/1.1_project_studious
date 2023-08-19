@@ -26,7 +26,6 @@ body {
 }
 .title h2 span {
   color: #ff6e65;
-  margin-left: 10px;
 }
 .title h2::before {
   content: "";
@@ -271,10 +270,12 @@ header .header__nav button {
   position: relative;
 }
 .banner .carousel-item {
-  height: 80vh;
   background-size: cover;
   background-position: bottom center;
+  position: relative;
+  height: 90vh;
 }
+
 .banner li {
   width: 10px;
   height: 10px;
@@ -287,17 +288,14 @@ header .header__nav button {
   border-radius: 50%;
   background-color: #ff6e65;
 }
-.banner .carousel-item {
-  position: relative;
-  height: 70%;
-}
+
 .banner .carousel-item .banner__text {
   width: 50%;
   height: 50%;
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(15%, 30%);
+  transform: translate(15%, 50%);
 }
 .banner .carousel-item .banner__text p {
   color: white;
@@ -324,7 +322,7 @@ header .header__nav button {
   padding: 50px 30px;
   border: 1px solid transparent;
   border-radius: 10px;
-  transform: translateY(-30%);
+  transform: translateY(-50%);
 }
 .service .service__item i {
   font-size: 45px;
@@ -720,10 +718,23 @@ header .header__nav button {
 @media screen and (max-width: 1200px) {
   .banner .banner__container .banner__text {
     width: 60%;
+    transform: translate(12%, 30%);
   }
 }
 @media screen and (max-width: 991px) {
   /* HEADER */
+  header .header__contact {
+    opacity: 0;
+    height: 0;
+  }
+  header .header__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    
+  }
 
   header .header__nav span.fa-bars {
     color: white;
@@ -750,12 +761,19 @@ header .header__nav button {
   }
 
   /* BANNER */
-  .banner .banner__container .carousel-item {
-    height: 90%;
+  .banner .banner__container .banner__img {
+    transform: translateY(-50px);
+    background-size: cover;
   }
   .banner .banner__container .banner__text {
-    transform: translate(12%, 50%);
+    width: 85%;
+    transform: translate(10%, 60%);
   }
+  .banner .banner__container .carousel-item {
+    height: 100vh;
+    width: 100vw;
+  }
+
   .banner .banner__container .banner__text p {
     font-size: 50px;
     line-height: 1;
@@ -766,18 +784,47 @@ header .header__nav button {
   }
 }
 @media screen and (max-width: 767px) {
+  .container__common {
+    width: 100%;
+  }
   /* BANNER */
+  .banner .banner__container .carousel-item {
+    height: 90vh;
+    width: 100vw;
+  }
   .banner .banner__container .banner__text {
-    transform: translate(16%, 40%);
+    transform: translate(10%, 60%);
     width: 85%;
+  }
+  .banner .banner__container .banner__text p {
+    width: 85%;
+    font-size: 45px;
   }
   /* SERVICE */
   .service .service__item {
     width: 85%;
     margin: 0 auto;
   }
+  /* INTRO */
+  .intro .intro__detai .intro__bot__item {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container__common {
+    width: 100%;
+  }
+  .banner .banner__container .banner__text {
+    width: 85%;
+  }
 }
 @media screen and (max-width: 575px) {
-}
-@media screen and (max-width: 575px) {
+  .container__common {
+    width: 100%;
+  }
+  .feedback .feedback__title h2,
+  .feedback .feedback__title span {
+    display: block;
+  }
 }
