@@ -138,7 +138,6 @@ button {
 #myBody.dark .intro .intro__top__item h3,
 #myBody.dark .intro .intro__top__item i {
   color: white; /* Màu bạn muốn cho chế độ tối */
-  font-size: 20px;
 }
 
 #myBody.dark .h5_DarkLight {
@@ -295,7 +294,7 @@ header .header__nav button {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(15%, 50%);
+  transform: translate(15%, 40%);
 }
 .banner .carousel-item .banner__text p {
   color: white;
@@ -733,7 +732,6 @@ header .header__nav button {
     left: 0;
     width: 100%;
     z-index: 10;
-    
   }
 
   header .header__nav span.fa-bars {
