@@ -279,13 +279,13 @@ header .header__nav button {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: white;
+  background-color: transparent;
 }
 .banner li.active {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #ff6e65;
+  background-color: transparent;
 }
 
 .banner .carousel-item .banner__text {
